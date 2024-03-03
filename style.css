@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+:root {
+  --clr: #1af7ff;
+}
+
+.text {
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.6);
+}
+.hover-text {
+  position: absolute;
+  inset: 0;
+  width: 0%;
+  color: var(--clr);
+  overflow: hidden;
+  border-right: 6px solid var(--clr);
+  transition: 0.5s ease-in-out;
+}
+
+div:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 40px var(--clr));
+}
+
+div:hover .text {
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0);
+}
+
+li {
+  display: table-cell;
+  position: relative;
+  padding: 15px 0;
+  background-color: transparent;
+}
+a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+
+a:hover {
+  width: 100%;
+  text-decoration: underline; /* Subrayar en :hover */
+  color: #000000; /* Cambiar color a rojo en :hover */
+}

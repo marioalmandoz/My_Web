@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Currículum</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+
+      .header {
+        background-color: #3498db;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .profile-pic img {
+        width: 100px; /* Ajusta el tamaño de la imagen según sea necesario */
+        border-radius: 50%;
+      }
+
+      .container {
+        display: flex;
+        max-width: 800px;
+        margin: 20px auto;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .left-half,
+      .right-half {
+        width: 50%;
+        padding: 20px;
+      }
+
+      .left-half {
+        background-color: #3498db;
+        color: #fff;
+      }
+
+      header {
+        text-align: center;
+      }
+
+      h1,
+      h2 {
+        color: #333;
+      }
+
+      section {
+        margin-bottom: 20px;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: #3498db;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .experience-title {
+        font-size: 1.5em;
+        font-weight: bold;
+        color: #333;
+      }
+
+      .experience-text {
+        color: #555;
+      }
+
+      .translate-button {
+        background-color: #4caf50;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .translate-button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="profile-pic">
+        <img src="tu_foto.jpg" alt="Tu Foto" />
+      </div>
+      <div>
+        <h1>Sobre Mí</h1>
+        <p>Esto es el sobre mi.</p>
+      </div>
+      <button class="translate-button" onclick="changeLanguage()">
+        Traducir
+      </button>
+    </div>
+    <div class="container">
+      <div class="left-half">
+        <section>
+          <h2>Contacto</h2>
+          <p>Correo: marioalmandoz6@email.com</p>
+          <p>Teléfono: +34 620146553</p>
+          <p>Larramendi 6 3I, Donostia-San Sebastian</p>
+        </section>
+
+        <section>
+          <h2>Idiomas</h2>
+          <p>Castellano: Nivel nativo</p>
+          <p>Inglés: Nivel alto</p>
+          <p>Euskara: Nivel intermedio</p>
+          <p>Francés: Nivel bajo</p>
+          <!-- Agrega más idiomas según sea necesario -->
+        </section>
+        <section>
+          <h2>Mas información</h2>
+          <p>Carnet de conducir, B y A2</p>
+          <p>Disponibilidad para viajar</p>
+          <p>Curso de primeros auxilios</p>
+        </section>
+        <section>
+          <h2>Aptitudes</h2>
+          <ul>
+            <li>Aptitud 1</li>
+            <li>Aptitud 2</li>
+            <!-- Agrega más aptitudes según sea necesario -->
+          </ul>
+        </section>
+      </div>
+
+      <div class="right-half">
+        <section>
+          <h2>Formación</h2>
+          <p>
+            Universidad del País Vasco(UPV/EHU): Grado en ingeniería informática
+            de gestión y sistemas de información. 2020-en curso.
+          </p>
+          <p>
+            Fontys University of Applied Sciences: 30 créditos de la carrera
+            realizados en Eindhoven/Países Bajos. Smart Mobile Manifest.
+          </p>
+          <p>
+            Escuela de musica y danza de San Sebastián: 2008-2013| Estudios de
+            música.
+          </p>
+        </section>
+
+        <section>
+          <div class="experience-title">Experiencia Laboral</div>
+          <p class="experience-text">ETT: Gueridon, Templer. 2022-2023</p>
+          <p class="experience-text">
+            Guía en el Torneo de fútbol Donosti Cup, dos años consecutivos.
+            2022-2023.
+          </p>
+          <p class="experience-text">
+            Departamento de almacén, Olabe. Junio de 2023.
+          </p>
+        </section>
+      </div>
+    </div>
+
+    <script>
+      function changeLanguage() {
+        // Puedes agregar aquí el código para cambiar el contenido a inglés
+        // Por ejemplo, puedes utilizar innerHTML para cambiar el texto de las secciones y otros elementos.
+        // Aquí hay un ejemplo simple:
+        document.querySelector("h1").innerText = "About Me";
+        document.querySelector("p").innerText =
+          "Your personal description in English.";
+      }
+    </script>
+  </body>
+</html>
